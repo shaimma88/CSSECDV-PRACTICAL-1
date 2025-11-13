@@ -507,6 +507,52 @@
                 "y": 190
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Query sales data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Query sales data"
+            ],
+            "id": "adb87352-4db5-4e5e-a524-ce5c8fee52a9",
+            "source": {
+              "cell": "dae06029-4c98-481c-82d3-2ddbab5f7faa",
+              "port": "d805de9c-a8f5-47ab-9065-47b43a660a56"
+            },
+            "target": {
+              "cell": "b4499dfc-868c-4ddf-86cc-3b555b9de2dd",
+              "port": "03bf5510-0b0c-4ba0-8c7a-f88afd18be29"
+            },
+            "vertices": []
           }
         ]
       }
