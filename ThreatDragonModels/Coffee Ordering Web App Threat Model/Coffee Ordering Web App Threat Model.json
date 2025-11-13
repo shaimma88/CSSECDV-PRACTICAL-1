@@ -1169,7 +1169,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Submit new \nmenu item \ndetails",
+              "name": "SUCCESS MESSAGE",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1182,7 +1182,7 @@
               "threats": []
             },
             "labels": [
-              "Submit new \nmenu item \ndetails"
+              "SUCCESS MESSAGE"
             ],
             "id": "e228fcca-abb5-4f6d-9d33-4821e3f5460a",
             "source": {
@@ -1193,12 +1193,7 @@
               "x": 350,
               "y": 260
             },
-            "vertices": [
-              {
-                "x": 400,
-                "y": 170
-              }
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1250,6 +1245,57 @@
                 "y": 250
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Submit new \nmenu item \ndetails",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Submit new \nmenu item \ndetails"
+            ],
+            "id": "b43d98cf-992e-4354-a468-4ddfeff73c3f",
+            "source": {
+              "x": 400,
+              "y": 360
+            },
+            "target": {
+              "cell": "2a0b952b-fb4d-4ec1-8769-26ca3a50a0a5",
+              "port": "1dcc10ae-b079-4f85-b30b-45ba2e1280e4"
+            },
+            "vertices": [
+              {
+                "x": 512,
+                "y": 320
+              }
+            ],
+            "zIndex": 13
           }
         ],
         "description": "Administrator Adds Menu Item"
