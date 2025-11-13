@@ -137,7 +137,7 @@
           {
             "position": {
               "x": 480,
-              "y": 40
+              "y": -10
             },
             "size": {
               "width": 240,
@@ -256,8 +256,8 @@
           },
           {
             "position": {
-              "x": 790,
-              "y": 250
+              "x": 780,
+              "y": 270
             },
             "size": {
               "width": 190,
@@ -377,85 +377,6 @@
               "storesInventory": false,
               "threats": []
             }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "CLIENT ZONE",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "CLIENT ZONE"
-            ],
-            "id": "06808695-aac1-47fa-8e42-d9fb97be5c1a",
-            "source": {
-              "x": 390,
-              "y": 490
-            },
-            "target": {
-              "x": 490,
-              "y": 590
-            }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "APPLICATION SERVER ZONE",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "APPLICATION SERVER ZONE"
-            ],
-            "id": "39cb2c91-f2f0-43dc-be93-0efcf6548e11",
-            "source": {
-              "x": 280,
-              "y": 610
-            },
-            "target": {
-              "x": 380,
-              "y": 710
-            }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "DATABASE ZONE",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "DATABASE ZONE"
-            ],
-            "id": "1eefec81-bb41-4521-9bdd-394a79be729f",
-            "source": {
-              "x": 150,
-              "y": 540
-            },
-            "target": {
-              "x": 250,
-              "y": 640
-            },
-            "vertices": []
           },
           {
             "shape": "flow",
@@ -578,57 +499,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Return sales data",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Return sales data"
-            ],
-            "id": "b1d294d2-7329-468d-a223-e117734080ee",
-            "source": {
-              "cell": "b4499dfc-868c-4ddf-86cc-3b555b9de2dd",
-              "port": "03bf5510-0b0c-4ba0-8c7a-f88afd18be29"
-            },
-            "target": {
-              "x": 660,
-              "y": 200
-            },
-            "vertices": [
-              {
-                "x": 710,
-                "y": 270
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Display sales report",
               "description": "",
               "outOfScope": false,
@@ -657,6 +527,151 @@
               {
                 "x": 450,
                 "y": 290
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "CLIENT ZONE",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "CLIENT ZONE"
+            ],
+            "id": "06808695-aac1-47fa-8e42-d9fb97be5c1a",
+            "source": {
+              "x": 290,
+              "y": 50
+            },
+            "target": {
+              "x": 450,
+              "y": 460
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "APPLICATION SERVER ZONE",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "APPLICATION SERVER ZONE"
+            ],
+            "id": "39cb2c91-f2f0-43dc-be93-0efcf6548e11",
+            "source": {
+              "x": 380,
+              "y": 130
+            },
+            "target": {
+              "x": 830,
+              "y": 120
+            },
+            "vertices": [
+              {
+                "x": 590,
+                "y": 190
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Return sales data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Return sales data"
+            ],
+            "id": "b1d294d2-7329-468d-a223-e117734080ee",
+            "source": {
+              "cell": "b4499dfc-868c-4ddf-86cc-3b555b9de2dd",
+              "port": "03bf5510-0b0c-4ba0-8c7a-f88afd18be29"
+            },
+            "target": {
+              "x": 660,
+              "y": 160
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 270
+              },
+              {
+                "x": 660,
+                "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "DATABASE ZONE",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "DATABASE ZONE"
+            ],
+            "id": "1eefec81-bb41-4521-9bdd-394a79be729f",
+            "source": {
+              "x": 830,
+              "y": 180
+            },
+            "target": {
+              "x": 830,
+              "y": 500
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 400
               }
             ]
           }
