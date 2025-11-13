@@ -1067,7 +1067,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Insert new menu item",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1080,23 +1080,33 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Insert new menu item"
             ],
             "id": "e89d4bcb-815b-4e92-8653-acd17e2460f1",
             "source": {
-              "x": 260,
-              "y": 520
+              "x": 640,
+              "y": 180
             },
             "target": {
-              "x": 360,
-              "y": 620
+              "x": 740,
+              "y": 280
             },
             "vertices": [
               {
-                "x": 290,
-                "y": 590
+                "x": 690,
+                "y": 240
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1118,7 +1128,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Confirm item creation",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1131,21 +1141,21 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Confirm item creation"
             ],
             "id": "5b276eca-d028-4eea-afb5-12817a7303c5",
             "source": {
-              "x": 490,
-              "y": 570
+              "x": 770,
+              "y": 250
             },
             "target": {
-              "x": 380,
-              "y": 460
+              "x": 660,
+              "y": 140
             },
             "vertices": [
               {
-                "x": 440,
-                "y": 480
+                "x": 720,
+                "y": 160
               }
             ]
           },
