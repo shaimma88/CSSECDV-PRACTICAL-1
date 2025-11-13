@@ -208,8 +208,8 @@
                 "text": "WEB \nAPPLICATION SERVER"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -474,7 +474,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Elevation of Privilege",
-                  "description": "Users with the same role may access or modify each other\u2019s data due to missing authorization checks.",
+                  "description": "Users with the same role may access or modify each other’s data due to missing authorization checks.",
                   "mitigation": "",
                   "modelType": "STRIDE",
                   "new": true,
@@ -498,11 +498,13 @@
                 "text": "MONGO DB\nDATABASE"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -711,6 +713,13 @@
                   "score": ""
                 }
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1400,7 +1409,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Elevation of Privilege",
-                  "description": "Users with the same role may access or modify each other\u2019s data due to missing authorization checks.",
+                  "description": "Users with the same role may access or modify each other’s data due to missing authorization checks.",
                   "mitigation": "",
                   "modelType": "STRIDE",
                   "new": true,
