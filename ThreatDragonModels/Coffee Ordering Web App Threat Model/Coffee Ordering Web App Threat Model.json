@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "1597d52b-15a3-418c-8e1a-2fb47faaf472",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "MANAGER BROWSER",
@@ -140,7 +140,7 @@
               "y": 40
             },
             "size": {
-              "width": 230,
+              "width": 240,
               "height": 170
             },
             "attrs": {
@@ -155,6 +155,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -238,7 +239,6 @@
               ]
             },
             "id": "dae06029-4c98-481c-82d3-2ddbab5f7faa",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "WEB \nAPPLICATION SERVER",
@@ -278,6 +278,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -361,7 +362,6 @@
               ]
             },
             "id": "b4499dfc-868c-4ddf-86cc-3b555b9de2dd",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "MONGO DB\nDATABASE",
@@ -503,8 +503,12 @@
             },
             "vertices": [
               {
-                "x": 450,
-                "y": 190
+                "x": 390,
+                "y": 200
+              },
+              {
+                "x": 440,
+                "y": 160
               }
             ]
           },
@@ -553,6 +557,108 @@
               "port": "03bf5510-0b0c-4ba0-8c7a-f88afd18be29"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Return sales data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Return sales data"
+            ],
+            "id": "b1d294d2-7329-468d-a223-e117734080ee",
+            "source": {
+              "cell": "b4499dfc-868c-4ddf-86cc-3b555b9de2dd",
+              "port": "03bf5510-0b0c-4ba0-8c7a-f88afd18be29"
+            },
+            "target": {
+              "x": 660,
+              "y": 200
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 270
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Display sales report",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Display sales report"
+            ],
+            "id": "c84cb5c4-daf0-420e-b3c6-6c3a5d7f5a8a",
+            "source": {
+              "cell": "dae06029-4c98-481c-82d3-2ddbab5f7faa",
+              "port": "c13e34ff-4432-4033-815f-eb1a2ff97faa"
+            },
+            "target": {
+              "cell": "1597d52b-15a3-418c-8e1a-2fb47faaf472",
+              "port": "1ad7d05e-f833-4e44-b459-b300d36acb6b"
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": 290
+              }
+            ]
           }
         ]
       }
