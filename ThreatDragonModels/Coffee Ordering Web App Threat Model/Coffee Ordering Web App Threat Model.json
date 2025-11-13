@@ -11,7 +11,7 @@
     "diagrams": [
       {
         "id": 0,
-        "title": "New STRIDE diagram",
+        "title": "",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -675,7 +675,8 @@
               }
             ]
           }
-        ]
+        ],
+        "description": "Manager Views Sales Reports"
       }
     ],
     "diagramTop": 1,
