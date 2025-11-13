@@ -531,64 +531,6 @@
             ]
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "CLIENT ZONE",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "CLIENT ZONE"
-            ],
-            "id": "06808695-aac1-47fa-8e42-d9fb97be5c1a",
-            "source": {
-              "x": 290,
-              "y": 50
-            },
-            "target": {
-              "x": 450,
-              "y": 460
-            }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "APPLICATION SERVER ZONE",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "APPLICATION SERVER ZONE"
-            ],
-            "id": "39cb2c91-f2f0-43dc-be93-0efcf6548e11",
-            "source": {
-              "x": 380,
-              "y": 130
-            },
-            "target": {
-              "x": 830,
-              "y": 120
-            },
-            "vertices": [
-              {
-                "x": 590,
-                "y": 190
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -651,29 +593,23 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "DATABASE ZONE",
+              "name": "Trust Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              "DATABASE ZONE"
+              "Trust Boundary"
             ],
-            "id": "1eefec81-bb41-4521-9bdd-394a79be729f",
+            "id": "c1d3d97f-173e-44c4-92bf-cbd11b0cabd0",
             "source": {
-              "x": 830,
-              "y": 180
+              "x": 280,
+              "y": 60
             },
             "target": {
-              "x": 830,
-              "y": 500
-            },
-            "vertices": [
-              {
-                "x": 710,
-                "y": 400
-              }
-            ]
+              "x": 650,
+              "y": 410
+            }
           }
         ],
         "description": "Manager Views Sales Reports"
