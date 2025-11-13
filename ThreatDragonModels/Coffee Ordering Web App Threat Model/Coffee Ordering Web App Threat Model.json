@@ -707,6 +707,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -790,7 +791,6 @@
               ]
             },
             "id": "1fbce393-32b4-44f1-a014-5a04dca2005b",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "ADMINISTRATOR \nBROWSER",
@@ -824,6 +824,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -907,7 +908,6 @@
               ]
             },
             "id": "2a0b952b-fb4d-4ec1-8769-26ca3a50a0a5",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "WEB \nAPPLICATION \nSERVER",
@@ -947,6 +947,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -1030,7 +1031,6 @@
               ]
             },
             "id": "ca383fcd-bb57-4fe3-b60e-abbeb68ead3b",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "MONGODB \nDATABASE",
@@ -1084,17 +1084,17 @@
             ],
             "id": "e89d4bcb-815b-4e92-8653-acd17e2460f1",
             "source": {
-              "x": 150,
-              "y": 540
+              "x": 260,
+              "y": 520
             },
             "target": {
-              "x": 250,
-              "y": 640
+              "x": 360,
+              "y": 620
             },
             "vertices": [
               {
-                "x": 180,
-                "y": 610
+                "x": 290,
+                "y": 590
               }
             ]
           },
@@ -1135,17 +1135,17 @@
             ],
             "id": "5b276eca-d028-4eea-afb5-12817a7303c5",
             "source": {
-              "x": 270,
-              "y": 610
+              "x": 490,
+              "y": 570
             },
             "target": {
-              "x": 160,
-              "y": 500
+              "x": 380,
+              "y": 460
             },
             "vertices": [
               {
-                "x": 220,
-                "y": 520
+                "x": 440,
+                "y": 480
               }
             ]
           },
@@ -1216,6 +1216,7 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 12,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -1248,8 +1249,7 @@
                 "x": 480,
                 "y": 250
               }
-            ],
-            "zIndex": 12
+            ]
           }
         ],
         "description": "Administrator Adds Menu Item"
